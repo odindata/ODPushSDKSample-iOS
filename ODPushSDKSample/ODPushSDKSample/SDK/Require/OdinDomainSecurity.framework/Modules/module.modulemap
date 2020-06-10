@@ -1,0 +1,6 @@
+framework module OdinDomainSecurity {
+  umbrella header "OdinDomainSecurity.h"
+
+  export *
+  module * { export * }
+}

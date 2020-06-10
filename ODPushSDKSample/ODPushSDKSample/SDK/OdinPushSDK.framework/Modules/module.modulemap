@@ -1,0 +1,6 @@
+framework module OdinPushSDK {
+  umbrella header "OdinPushSDK.h"
+
+  export *
+  module * { export * }
+}

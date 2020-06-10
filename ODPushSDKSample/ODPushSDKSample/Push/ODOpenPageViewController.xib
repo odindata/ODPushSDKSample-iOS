@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ODOpenPageViewController">
+            <connections>
+                <outlet property="contentTxtView" destination="Rxt-04-jo5" id="Cmt-tn-sjp"/>
+                <outlet property="testBtn" destination="hJH-Fg-chA" id="x2W-0L-Vl5"/>
+                <outlet property="urlTextFiled" destination="9vu-lS-Eg2" id="aRK-xV-rHn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击测试按钮后，请在前台关闭App,10s后本手机将收到一条App测试通知提醒，点击后将跳转至指定链接" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fhG-LI-obE">
+                    <rect key="frame" x="13" y="16" width="349" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="I4E-dL-SNc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请填写跳转的URL地址" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9vu-lS-Eg2">
+                    <rect key="frame" x="13" y="73" width="349" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="gIn-R3-pNN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Rxt-04-jo5">
+                    <rect key="frame" x="13" y="125" width="349" height="120"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="gX2-cF-T2Y"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hJH-Fg-chA">
+                    <rect key="frame" x="16" y="277" width="343" height="45"/>
+                    <color key="backgroundColor" red="0.015686274509803921" green="0.79607843137254897" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="rH8-Jj-aLS"/>
+                        <constraint firstAttribute="height" constant="45" id="xTQ-c1-kzF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="点击测试">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="tesBtnAtction:" destination="-1" eventType="touchUpInside" id="aVT-Ko-Igz"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Rxt-04-jo5" firstAttribute="trailing" secondItem="fhG-LI-obE" secondAttribute="trailing" id="3XV-DK-L48"/>
+                <constraint firstItem="9vu-lS-Eg2" firstAttribute="top" secondItem="fhG-LI-obE" secondAttribute="bottom" constant="17" id="6IM-m4-Wsy"/>
+                <constraint firstItem="hJH-Fg-chA" firstAttribute="top" secondItem="Rxt-04-jo5" secondAttribute="bottom" constant="32" id="Bh2-i0-s4x"/>
+                <constraint firstItem="Rxt-04-jo5" firstAttribute="leading" secondItem="fhG-LI-obE" secondAttribute="leading" id="Fmm-ZK-yUo"/>
+                <constraint firstItem="9vu-lS-Eg2" firstAttribute="trailing" secondItem="fhG-LI-obE" secondAttribute="trailing" id="FpT-G3-XDy"/>
+                <constraint firstItem="fhG-LI-obE" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="16" id="O0P-xE-T2z"/>
+                <constraint firstItem="hJH-Fg-chA" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="16" id="UJY-cW-a7P"/>
+                <constraint firstItem="Rxt-04-jo5" firstAttribute="top" secondItem="9vu-lS-Eg2" secondAttribute="bottom" constant="12" id="ZOg-I4-wI0"/>
+                <constraint firstItem="fhG-LI-obE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="13" id="jtb-EA-0TE"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="hJH-Fg-chA" secondAttribute="trailing" constant="16" id="kMq-FM-G3P"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="fhG-LI-obE" secondAttribute="trailing" constant="13" id="oaO-8u-U3M"/>
+                <constraint firstItem="9vu-lS-Eg2" firstAttribute="leading" secondItem="fhG-LI-obE" secondAttribute="leading" id="qUZ-80-pTg"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="132" y="153.37331334332833"/>
+        </view>
+    </objects>
+</document>
