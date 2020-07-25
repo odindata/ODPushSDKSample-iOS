@@ -30,7 +30,48 @@
 		D8526CFE248DFEEA0056A13C /* ODNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8526CEC248DFEEA0056A13C /* ODNavigationViewController.m */; };
 		D8526D00248DFFBA0056A13C /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D8526CFF248DFFB40056A13C /* libc++.tbd */; };
 		D8526D02248DFFD10056A13C /* libz.1.2.5.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D8526D01248DFFC90056A13C /* libz.1.2.5.tbd */; };
+		D86C6BFF24A82FF3002E59A2 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = D86C6BFE24A82FF3002E59A2 /* NotificationService.m */; };
+		D86C6C0324A82FF3002E59A2 /* ODPushService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D86C6BFB24A82FF3002E59A2 /* ODPushService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D86C6C0E24A83019002E59A2 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86C6C0D24A83019002E59A2 /* UserNotifications.framework */; };
+		D86C6C1024A83019002E59A2 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D86C6C0F24A83019002E59A2 /* UserNotificationsUI.framework */; };
+		D86C6C1424A83019002E59A2 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D86C6C1324A83019002E59A2 /* NotificationViewController.m */; };
+		D86C6C1724A83019002E59A2 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D86C6C1524A83019002E59A2 /* MainInterface.storyboard */; };
+		D86C6C1B24A83019002E59A2 /* ODPushContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D86C6C0C24A83019002E59A2 /* ODPushContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D86C6C1F24A8393C002E59A2 /* OdinPushSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8526CC6248DFEE80056A13C /* OdinPushSDK.framework */; };
+		D86C6C2024A8393C002E59A2 /* OdinPushSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D8526CC6248DFEE80056A13C /* OdinPushSDK.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D86C6C0124A82FF3002E59A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8526CA1248DE8260056A13C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D86C6BFA24A82FF3002E59A2;
+			remoteInfo = ODPushService;
+		};
+		D86C6C1924A83019002E59A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8526CA1248DE8260056A13C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D86C6C0B24A83019002E59A2;
+			remoteInfo = ODPushContent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D86C6C0424A82FF3002E59A2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D86C6C0324A82FF3002E59A2 /* ODPushService.appex in Embed App Extensions */,
+				D86C6C1B24A83019002E59A2 /* ODPushContent.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AB3885FF9E06EFD6B0C079B5 /* Pods_ODPushSDKSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ODPushSDKSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,6 +115,17 @@
 		D8526CFF248DFFB40056A13C /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		D8526D01248DFFC90056A13C /* libz.1.2.5.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.1.2.5.tbd; path = usr/lib/libz.1.2.5.tbd; sourceTree = SDKROOT; };
 		D8526D03248DFFE40056A13C /* ODPushSDKSample.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ODPushSDKSample.entitlements; sourceTree = "<group>"; };
+		D86C6BFB24A82FF3002E59A2 /* ODPushService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ODPushService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86C6BFD24A82FF3002E59A2 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		D86C6BFE24A82FF3002E59A2 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		D86C6C0024A82FF3002E59A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D86C6C0C24A83019002E59A2 /* ODPushContent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ODPushContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D86C6C0D24A83019002E59A2 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		D86C6C0F24A83019002E59A2 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		D86C6C1224A83019002E59A2 /* NotificationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationViewController.h; sourceTree = "<group>"; };
+		D86C6C1324A83019002E59A2 /* NotificationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationViewController.m; sourceTree = "<group>"; };
+		D86C6C1624A83019002E59A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		D86C6C1824A83019002E59A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DEC2408B46B9F2C246D9B86F /* Pods-ODPushSDKSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODPushSDKSample.debug.xcconfig"; path = "Target Support Files/Pods-ODPushSDKSample/Pods-ODPushSDKSample.debug.xcconfig"; sourceTree = "<group>"; };
 		E7449D40C10E8A3BB1E99A6E /* Pods-ODPushSDKSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ODPushSDKSample.release.xcconfig"; path = "Target Support Files/Pods-ODPushSDKSample/Pods-ODPushSDKSample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,6 +139,24 @@
 				D8526D02248DFFD10056A13C /* libz.1.2.5.tbd in Frameworks */,
 				D8526D00248DFFBA0056A13C /* libc++.tbd in Frameworks */,
 				D8526CED248DFEEA0056A13C /* OdinPushSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86C6BF824A82FF3002E59A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86C6C1F24A8393C002E59A2 /* OdinPushSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86C6C0924A83019002E59A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86C6C1024A83019002E59A2 /* UserNotificationsUI.framework in Frameworks */,
+				D86C6C0E24A83019002E59A2 /* UserNotifications.framework in Frameworks */,
+				D86C6C2024A8393C002E59A2 /* OdinPushSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +178,8 @@
 				D8526D01248DFFC90056A13C /* libz.1.2.5.tbd */,
 				D8526CFF248DFFB40056A13C /* libc++.tbd */,
 				AB3885FF9E06EFD6B0C079B5 /* Pods_ODPushSDKSample.framework */,
+				D86C6C0D24A83019002E59A2 /* UserNotifications.framework */,
+				D86C6C0F24A83019002E59A2 /* UserNotificationsUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				D8526CAB248DE8260056A13C /* ODPushSDKSample */,
+				D86C6BFC24A82FF3002E59A2 /* ODPushService */,
+				D86C6C1124A83019002E59A2 /* ODPushContent */,
 				D8526CAA248DE8260056A13C /* Products */,
 				87CB0B7091CDFE833C0D5C80 /* Pods */,
 				9EB70057DC532668595ABAE8 /* Frameworks */,
@@ -126,6 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				D8526CA9248DE8260056A13C /* ODPushSDKSample.app */,
+				D86C6BFB24A82FF3002E59A2 /* ODPushService.appex */,
+				D86C6C0C24A83019002E59A2 /* ODPushContent.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -246,6 +322,27 @@
 			path = Push;
 			sourceTree = "<group>";
 		};
+		D86C6BFC24A82FF3002E59A2 /* ODPushService */ = {
+			isa = PBXGroup;
+			children = (
+				D86C6BFD24A82FF3002E59A2 /* NotificationService.h */,
+				D86C6BFE24A82FF3002E59A2 /* NotificationService.m */,
+				D86C6C0024A82FF3002E59A2 /* Info.plist */,
+			);
+			path = ODPushService;
+			sourceTree = "<group>";
+		};
+		D86C6C1124A83019002E59A2 /* ODPushContent */ = {
+			isa = PBXGroup;
+			children = (
+				D86C6C1224A83019002E59A2 /* NotificationViewController.h */,
+				D86C6C1324A83019002E59A2 /* NotificationViewController.m */,
+				D86C6C1524A83019002E59A2 /* MainInterface.storyboard */,
+				D86C6C1824A83019002E59A2 /* Info.plist */,
+			);
+			path = ODPushContent;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -258,15 +355,52 @@
 				D8526CA6248DE8260056A13C /* Frameworks */,
 				D8526CA7248DE8260056A13C /* Resources */,
 				62C5B94DE002EA76409288D8 /* [CP] Embed Pods Frameworks */,
+				D86C6C0424A82FF3002E59A2 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D86C6C0224A82FF3002E59A2 /* PBXTargetDependency */,
+				D86C6C1A24A83019002E59A2 /* PBXTargetDependency */,
 			);
 			name = ODPushSDKSample;
 			productName = ODPushSDKSample;
 			productReference = D8526CA9248DE8260056A13C /* ODPushSDKSample.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D86C6BFA24A82FF3002E59A2 /* ODPushService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D86C6C0724A82FF3002E59A2 /* Build configuration list for PBXNativeTarget "ODPushService" */;
+			buildPhases = (
+				D86C6BF724A82FF3002E59A2 /* Sources */,
+				D86C6BF824A82FF3002E59A2 /* Frameworks */,
+				D86C6BF924A82FF3002E59A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ODPushService;
+			productName = ODPushService;
+			productReference = D86C6BFB24A82FF3002E59A2 /* ODPushService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D86C6C0B24A83019002E59A2 /* ODPushContent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D86C6C1C24A83019002E59A2 /* Build configuration list for PBXNativeTarget "ODPushContent" */;
+			buildPhases = (
+				D86C6C0824A83019002E59A2 /* Sources */,
+				D86C6C0924A83019002E59A2 /* Frameworks */,
+				D86C6C0A24A83019002E59A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ODPushContent;
+			productName = ODPushContent;
+			productReference = D86C6C0C24A83019002E59A2 /* ODPushContent.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -279,6 +413,12 @@
 				TargetAttributes = {
 					D8526CA8248DE8260056A13C = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					D86C6BFA24A82FF3002E59A2 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					D86C6C0B24A83019002E59A2 = {
+						CreatedOnToolsVersion = 11.5;
 					};
 				};
 			};
@@ -296,6 +436,8 @@
 			projectRoot = "";
 			targets = (
 				D8526CA8248DE8260056A13C /* ODPushSDKSample */,
+				D86C6BFA24A82FF3002E59A2 /* ODPushService */,
+				D86C6C0B24A83019002E59A2 /* ODPushContent */,
 			);
 		};
 /* End PBXProject section */
@@ -310,6 +452,21 @@
 				D8526CFA248DFEEA0056A13C /* ODRestoreViewController.xib in Resources */,
 				D8526CB9248DE8270056A13C /* Assets.xcassets in Resources */,
 				D8526CFB248DFEEA0056A13C /* ODOpenPageViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86C6BF924A82FF3002E59A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86C6C0A24A83019002E59A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86C6C1724A83019002E59A2 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +536,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D86C6BF724A82FF3002E59A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86C6BFF24A82FF3002E59A2 /* NotificationService.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D86C6C0824A83019002E59A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D86C6C1424A83019002E59A2 /* NotificationViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D86C6C0224A82FF3002E59A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D86C6BFA24A82FF3002E59A2 /* ODPushService */;
+			targetProxy = D86C6C0124A82FF3002E59A2 /* PBXContainerItemProxy */;
+		};
+		D86C6C1A24A83019002E59A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D86C6C0B24A83019002E59A2 /* ODPushContent */;
+			targetProxy = D86C6C1924A83019002E59A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D8526CBA248DE8270056A13C /* LaunchScreen.storyboard */ = {
@@ -388,6 +574,14 @@
 				D8526CBB248DE8270056A13C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D86C6C1524A83019002E59A2 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D86C6C1624A83019002E59A2 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -585,6 +779,100 @@
 			};
 			name = Release;
 		};
+		D86C6C0524A82FF3002E59A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODPushSDKSample/SDK",
+				);
+				INFOPLIST_FILE = ODPushService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.odin.ODPushSDKSample.ODPushService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D86C6C0624A82FF3002E59A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODPushSDKSample/SDK",
+				);
+				INFOPLIST_FILE = ODPushService/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.odin.ODPushSDKSample.ODPushService;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D86C6C1D24A83019002E59A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODPushSDKSample/SDK",
+				);
+				INFOPLIST_FILE = ODPushContent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.odin.ODPushSDKSample.ODPushContent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D86C6C1E24A83019002E59A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TVSH9W54D7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ODPushSDKSample/SDK",
+				);
+				INFOPLIST_FILE = ODPushContent/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.odin.ODPushSDKSample.ODPushContent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -602,6 +890,24 @@
 			buildConfigurations = (
 				D8526CC3248DE8270056A13C /* Debug */,
 				D8526CC4248DE8270056A13C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D86C6C0724A82FF3002E59A2 /* Build configuration list for PBXNativeTarget "ODPushService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86C6C0524A82FF3002E59A2 /* Debug */,
+				D86C6C0624A82FF3002E59A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D86C6C1C24A83019002E59A2 /* Build configuration list for PBXNativeTarget "ODPushContent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D86C6C1D24A83019002E59A2 /* Debug */,
+				D86C6C1E24A83019002E59A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
