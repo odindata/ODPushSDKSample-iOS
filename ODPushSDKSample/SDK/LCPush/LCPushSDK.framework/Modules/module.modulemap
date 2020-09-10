@@ -1,0 +1,6 @@
+framework module LCPushSDK {
+  umbrella header "LCPushSDK.h"
+
+  export *
+  module * { export * }
+}

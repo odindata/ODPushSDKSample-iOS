@@ -1,0 +1,6 @@
+framework module LCMDomainSecurity {
+  umbrella header "LCMDomainSecurity.h"
+
+  export *
+  module * { export * }
+}

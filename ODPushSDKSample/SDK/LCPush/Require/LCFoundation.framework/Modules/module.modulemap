@@ -1,0 +1,6 @@
+framework module LCFoundation {
+  umbrella header "LCFoundation.h"
+
+  export *
+  module * { export * }
+}
